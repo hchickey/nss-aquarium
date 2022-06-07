@@ -1,52 +1,92 @@
 #martins-aqua {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
+    width: 50%; 
+    height: 50%;
+}
+
+.title {
+    text-align: center;
 }
 
 .polaroid {
     display: flex;
-    flex-flow: row wrap;
+    float: left;
     width: 50%;
     background-color: blue;
-    padding: 1.5em;
-    margin: 0.75em;
+    padding: 7px;
+}
+
+.polaroid img {
+    width: 100%;
 }
 
 .listFish {
     display: flex;
-    flex-flow: row wrap;
-    width: 50%;
+    flex: wrap; 
+    width: auto;
     background-color: rgb(6, 67, 250);
+    justify-content: space-between; 
+    padding: 1.5em;
+    margin: 1.5em;
+    text-align: center;
+    
+    
+}
+
+.harvest {
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    background-color: orange;
     justify-content: space-between;
     padding: 1.5em;
-    margin: 0.75em;
+    margin: 1.5em;
     
+}
+
+.harvestFish {
+    display: flex;
+    flex: wrap; 
+    width: 80%;
+    background-color: rgb(6, 67, 250);
+    justify-content: space-between; 
+    padding: 1.5em;
+    margin: 1.5em;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    text-align: center;
 }
 
 .cleanTank {
     text-align: left;
     background-color: yellow;
-    width: 50%;
+    width: 40%;
     padding: 1.5em;
-    margin: 0.75em;
+    margin: 1.5em;
+    float: right;
+    
 }
 
 .quotes {
     background-color: green;
     text-align: center;
     padding: 1.5em;
-    margin: 0.75em;
+    margin: 1.5em;
 }
 
-.harvest {
-    background-color: orange;
-    padding: 1.5em;
-    margin: 0.75em;
+
+.harvest img {
+    width: 200px
 }
 
 img {
-    width: 200px;
+    width: 50px;
     size-adjust: 2em;
+    block-size: auto;
 }
 
 p {
@@ -56,4 +96,26 @@ p {
 
 h2 {
     font-size: 185%;
+}
+
+.sectionOne {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+.sectionTwo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.container {
+    background-color: rgb(104, 173, 133);
+    border-radius: 50%;
+    width: 70px;
+    text-align: center;
 }
